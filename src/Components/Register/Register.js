@@ -37,13 +37,7 @@ const Register = () => {
       method:'POST',
       body:formData
   } )
-  .then(res=>res.json())
-  .then(data=>{
-    const postpic=data?.data?.display_url
-    const postData={
-        email,fristName,lastName,university,
-        postpic
-
+  
     }
     fetch(` https://y-iota-self.vercel.app/registerData`,{
         method:'POST',
